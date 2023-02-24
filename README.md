@@ -1,1 +1,5 @@
 # ToDo-List
+Itis a To Do list where you can add all your tasks which you want to do.
+ I use :
+ - JS , HtTML5 , CSS3
+ - The app is resposive to all screen.
