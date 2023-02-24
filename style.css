@@ -1,0 +1,140 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  background-color: #49a4f3;
+}
+h2 {
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  margin: auto;
+  border-radius: 12px;
+}
+form {
+  display: flex;
+  background-color: #205295;
+  width: 400px;
+  border-radius: 5px;
+  margin: 50px auto;
+}
+input[type="text"] {
+  border: 1px solid rgb(185, 182, 182);
+  width: 80%;
+  height: 40px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 10px;
+  font-size: 15px;
+}
+input[type="text"]:focus {
+  outline: 1px solid rgb(184, 181, 181);
+}
+.btn {
+  background-color: #0472f3;
+  border: none;
+  width: 100px;
+  height: 40px;
+  margin: 10px 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+p {
+  font-size: 18px;
+  font-weight: 600;
+}
+.task {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 19px;
+  margin-bottom: 12px;
+  background-color: white;
+  padding: 5px 5px 5px 10px;
+  border-radius: 5px;
+  height: fit-content;
+}
+.task:last-of-type {
+  margin-bottom: 0;
+}
+.done {
+  background-color: rgb(122 213 134);
+}
+
+.delete-btn {
+  font-weight: 600;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+  color: red;
+  margin-right: 10px;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #205295;
+  width: 400px;
+  min-height: 40px;
+  border-radius: 5px;
+  margin: 50px auto;
+  padding: 15px 15px;
+}
+.content:last-child() {
+  margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 15px;
+  }
+  .content {
+    width: 100%;
+  }
+
+  form {
+    width: 100%;
+  }
+}
+
+span {
+  border-radius: 5px;
+  padding: 2px;
+  font-size: 18px;
+  background-color: green;
+  width: fit-content;
+}
+
+#clear {
+  background-color: rgb(233, 63, 21);
+  border: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  font-weight: 700;
+  color: #000000ad;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+}
